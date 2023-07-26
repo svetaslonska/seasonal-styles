@@ -32,16 +32,10 @@
     }
 
     ul.colors{
-	display:inline-block;
-	margin-left:5%;
-}
-    div#myDiv {
-       /* background-color: yellow;*/
+        display:inline-block;
+        margin-left:5%;
     }
 
-    div#myDiv > p {
-        background-color: orange;
-    }
   </style>
  </head>
  <body>
@@ -60,7 +54,7 @@
 	</header>
      
    <main class="wrapper">
-    <header><h3>Outfitter for All Seasons!</h3></header>
+    <header><h3 id="slogan">Outfitter for All Seasons!</h3></header>
     <p>
     The colors of the seasonal images are as follows:
         <ul class="colors">
@@ -71,12 +65,6 @@
         </ul>
     </p>
 
-    <div id="myDiv">
-        <p>I'm inside the div</p>
-        <p>I'm inside the div</p>
-        <p>I'm inside the div</p>
-        <p>I'm inside the div</p>
-    </div>
     <p>
     Aesthetic gentrify YOLO McSweeney's typewriter single-origin coffee. Slow-carb hella listicle lomo, Helvetica single-origin coffee butcher stumptown. Chambray try-hard church-key mumblecore, tote bag PBR cardigan. Retro Austin Brooklyn, blog Intelligentsia gentrify jean shorts sartorial bicycle rights gastropub. Aesthetic wayfarers Pitchfork, tattooed Carles quinoa meh leggings distillery pork belly banjo. Umami cred lumbersexual skateboard, pork belly Tumblr vegan letterpress. Fixie bicycle rights butcher chillwave, gluten-free health goth Echo Park locavore whatever.
     <img src="images/300x400.png" alt="Season Wear Goes Here" id="wear" />
@@ -99,16 +87,6 @@
     </footer>
   </main>
   <script src="js/main.js"></script>
-  <script>
-      //document.querySelector("div#myDiv").innerHTML = "Add some words via JS";
- 
-      //Using jQuery to change background-color and add text
-      $("document").ready(function(){
-        
-        
-        
-      });
-
-  </script>
+  <script src="js/seasonal-style.js"></script>
   </body>
 </html>
