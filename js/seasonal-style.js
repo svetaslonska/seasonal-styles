@@ -40,8 +40,8 @@ $("document").ready(function(){
             case "default":
                 $("html").css("background-color", "pink");
                 $("#slogan").text("Outfitter for All Seasons!");
-                //$("#wear").attr("src", "four-seasones.jpg");
-                //$("#logo").attr("src", "four-seasons.gif");
+                $("#wear").attr("src", "images/four-seasones.jpg");
+                $("#logo").attr("src", "images/four-seasons.gif");
             break;
         }
 
