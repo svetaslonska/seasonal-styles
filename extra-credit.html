@@ -93,22 +93,24 @@
     </footer>
   </main>
   <script src="js/main.js"></script>
-  <script>
-	$("document").ready(function(){
-		$('#dateForm').submit(function(e){//handle form submission event
-            e.preventDefault();//stop default submission
-			var datetext = $('input[name=dateField]').val();//grab data from textbox
-			var formDate = new Date(datetext);//create a date from form input
-			var today = new Date();
-			
-			if(formDate > today)
-			{
-				alert(datetext + " is in the future!");
-			}else{
-				alert(datetext + " is in the past!");
-			}
-		});
-	});
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $("document").ready(function () {
+            $('#dateForm').submit(function (e) { //handle form submission event
+                e.preventDefault(); //stop default submission
+                var datetext = $('input[name=dateField]').val(); //grab data from textbox
+                var formDate = new Date(datetext); //create a date from form input
+                var today = new Date();
+
+                if (formDate > today) {
+                    alert(datetext + " is in the future!");
+                } else if (formDate < today) {
+                    alert(datetext + " is in the past!");
+                } else {
+                    alert("You entered today's date!");
+                }
+            });
+        });
     </script>
   </body>
 </html>
